@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Reduced padding for tighter spacing */
+    background-color: #2c3e50; /* Dark background color */
+    color: white; /* Text color */
+}
+
+.logo-container {
+    flex: 0 0 auto; /* Logo does not grow or shrink */
+}
+
+.logo {
+    width: 200px; /* Adjusted logo width */
+    height: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow nav to take remaining space */
+    margin-left: 20px; /* Space between logo and nav */
+}
+
+.banner-container {
+    flex: 0 0 100%; /* Banner takes full width */
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; /* Space links evenly */
+    margin-top: 10px; /* Space above the links */
+}
+
+.nav-link {
+    font-size: 1.5rem; /* Link font size */
+    color: white; /* Link color */
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Add hover effect */
+}
